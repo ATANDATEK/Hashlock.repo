@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuri flexbox and Grid layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+         :root {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            max-width: 1440px;
+            Font-size: 15px;
+            color: hsla(0, 0%, 100%, 0.75);
+            display: flex;
+            justify-content: center;
+            text-transform: capitalize;
+            font-family: 'Lexend Deca', sans-serif;
+            margin-top: 70px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+        }
+        
+        .align {
+            margin: 20px;
+            padding: 25px;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            font-family: 'Big Shoulders Display', cursive;
+            margin-top: 30px;
+        }
+        
+        .sedan {
+            background-color: hsl(31, 77%, 52%);
+        }
+        
+        .suvs {
+            background-color: hsl(184, 100%, 22%);
+        }
+        
+        .luxury {
+            background-color: hsl(179, 100%, 13%);
+        }
+        
+        p {
+            margin-top: 25px;
+            line-height: 25px;
+            font-size: 0.9em;
+        }
+        
+        button {
+            margin-top: 60px;
+            border: 2px solid hsl(0, 0%, 95%);
+            background-color: hsl(31, 77%, 52%);
+            color: hsl(0, 0%, 95%);
+            text-transform: capitalize;
+            font-size: 14px;
+            border-radius: 20px;
+            padding: 12px 28px;
+        }
+        
+        .Btnsuv {
+            background-color: hsl(184, 100%, 22%);
+        }
+        
+        .Btnluxury {
+            background-color: hsl(179, 100%, 13%)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sedan box">
+            <div class="align">
+                <header>
+                    <Img src="images/icon-sedans.svg" alt="image of a sedan vehicle" width="">
+                </header>
+                <h1>Sedans</h1>
+                <p>choose a sedan for its affordability and excellent fuel economy. ideal for cruising in the city or on your next road trip
+                </p>
+                <button class="Btnsedan">Learn more</button>
+            </div>
+        </div>
+        <div class="suvs box">
+            <div class="align">
+                <header>
+                    <Img src="images/icon-suvs.svg" alt="image of a sedan vehicle">
+                </header>
+                <h1>Suvs</h1>
+                <p>take an suv for its spacious interiors, power and versatility perfect for your next family vacation and off-road adventures
+                </p>
+                <button class="Btnsuv">Learn more</button>
+            </div>
+        </div>
+        <div class="luxury box">
+            <div class="align">
+                <header>
+                    <Img src="images/icon-luxury.svg" alt="image of a sedan vehicle">
+                </header>
+                <h1>luxury</h1>
+                <p>cruise in the best car brands without bloated prizes enjoy the enhanced comfort of a luxury rental and arrive in style
+                </p>
+                <button class="Btnluxury">Learn more</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

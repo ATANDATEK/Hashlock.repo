@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+        }
+        
+        header {
+            background-image: url(images/bg-hero-desktop.svg);
+            background-color: #effbff;
+        }
+        
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
+            line-height: 50px;
+            color: hsl(192, 100%, 9%);
+        }
+        
+        h2 {
+            color: hsl(192, 100%, 9%);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        p {
+            font-size: 18px;
+            text-transform: initial;
+            color: hsl(208, 11%, 55%);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .try {
+            background-color: white;
+            width: 200px;
+            color: rgb(0, 37, 46);
+            font-weight: bold;
+            text-transform: capitalize;
+            box-shadow: 0px 1px 4px -1px;
+        }
+        
+        .logo,
+        .subheading,
+        .content {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 70px;
+            justify-content: space-between;
+        }
+        
+        nav {
+            justify-content: space-between;
+        }
+        
+        .content {
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0px 1px 4px -0.7px rgb(192, 192, 192);
+            align-content: space-around;
+        }
+        
+        .build {
+            width: 850px;
+            font-size: 1.1em;
+            margin-right: 100px;
+            color: rgb(0, 37, 46);
+            align-self: center;
+            text-transform: capitalize;
+        }
+        
+        button {
+            width: 220px;
+            background-color: rgb(255, 91, 186);
+            height: 45px;
+            border-radius: 20px;
+            border-style: none;
+            color: white;
+            margin-top: 10px;
+        }
+        
+        .two {
+            margin-top: 50px;
+        }
+        
+        .text {
+            align-self: center;
+            width: 800px
+        }
+        
+        .growth,
+        .user {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        main {
+            margin-bottom: 150px;
+        }
+        
+        .last {
+            align-self: center;
+            width: 500px;
+            margin-bottom: -100px;
+            background-color: white;
+        }
+        
+        .ed {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        footer {
+            background-color: hsl(192, 100%, 9%);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footerimg {
+            background-color: white;
+        }
+        
+        .contact {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            color: white;
+        }
+        
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid grey;
+        }
+        
+        .menu,
+        .icon,
+        .brands {
+            border: 1px solid grey;
+        }
+        
+        .header {
+            margin: 150px 70px 0px 70px;
+        }
+        
+        .shape {
+            margin: 0px 70px 0px 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid white;
+        }
+        
+        ul {
+            list-style-type: none;
+            line-height: 50px;
+        }
+        
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container one">
+        <nav class=logo><img src="images/logo.svg" height="50%" alt="Huddle logo">
+            <button class="try">Try it free</button>
+        </nav>
+        <div class="subheading">
+            <div class="build">
+                <h1 class="heading">Build the community your fans will love</h1>
+                <p>Huddle re-imagines the way we build communities. You have a voice but so does your audience. create connections with your users as you engage in genuine discussion.
+                </p>
+                <button>Get started for free</button>
+            </div>
+            <div class="illustration m0ckup">
+                <img src="images/illustration-mockups.svg" alt="an illustration image" width="100%">
+            </div>
+        </div>
+    </header>
+
+    <main class="container two">
+
+        <div class="first content">
+            <div class="text ed">
+                <h2>
+                    Grow Together
+                </h2>
+                <p>
+                    Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+                </p>
+            </div>
+            <div class="illustration growth">
+                <img src="images/illustration-grow-together.svg" alt=" Avatar of man discussing with a lady" class=" media" width="70%">
+            </div>
+        </div>
+
+        <div class="second content">
+            <div class="illustration flow">
+                <img src="images/illustration-flowing-conversation.svg" alt="An avatar of group of people discussing" width="70%" class="media">
+            </div>
+
+            <div class="text">
+                <h2>
+                    Flowing conversations
+                </h2>
+                <p>
+                    you wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+                </p>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="third content">
+
+            <div class="text">
+                <h2>Your Users </h2>
+                <p>
+                    It takes no time at all to integrate huddle with your app's authentication solution. This means, once signed in on your app, your users can start chatting immediately.
+                </p>
+            </div>
+            <div class="illustration user">
+                <img src="images/illustration-your-users.svg" alt="" width="70%" class="mediauser">
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <aside class="container three">
+        <div class="last content ">
+            <div class="text ed">
+                <h2>
+                    Ready to build your community?
+                </h2>
+                <button>Get started for free</button>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="header">
+            <img src="images/logo.svg" alt="" class="footerimg">
+
+        </div>
+        <div class="shape">
+
+            <div class="contact">
+                <div class="icons">
+                    <img src="images/icon-location.svg" alt="" width="20px" height="20px">
+                    <h6>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae, harum at laboriosam laudantium molestiae ipsam fuga fugit
+                    </h6>
+                </div>
+                <div class="icons">
+                    <img src="images/icon-phone.svg" alt="" width="20px" height="20px">
+                    <h5>+1-543-123-4567</h5>
+                </div>
+                <div class="icons">
+                    <img src="images/icon-email.svg" alt="" width="20px" height="20px">
+                    <h5>example@huddle.com</h5>
+                </div>
+            </div>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">what we do</a></li>
+                    <li><a href="">faq</a></li>
+                </ul>
+            </div>
+            <div class="blog">
+                <ul>
+                    <li><a href="">career</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+            </div>
+            <div class="brands">
+                <ul>
+                    <li><i class="fa-brands fa-google-plus-g"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-facebook-square"></i></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

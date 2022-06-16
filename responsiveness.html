@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness and media queries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-width: 1440px;
+            background-image: url(images/1655220205913.png);
+        }
+        
+        main {
+            width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: hsl(0, 100%, 74%);
+            margin: 10px 70px;
+            background-image: url(images/1655220205905.png);
+        }
+        
+        h1 {
+            text-transform: capitalize;
+            font-size: 2em;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
+            color: hsl(255, 17%, 95%);
+            padding: 60px;
+        }
+        
+        .info {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            align-self: center;
+            margin: auto;
+        }
+        
+        p {
+            font-size: smaller;
+        }
+        
+        .shorttxt {
+            font-size: 11px;
+        }
+        
+        .try {
+            background-color: hsl(248, 32%, 49%);
+            text-align: center;
+            margin-top: 2px;
+            padding-top: 15px;
+            box-shadow: 3px 2px 5px 0px hsl(249, 10%, 26%);
+        }
+        
+        form {
+            background-color: rgb(255, 255, 255);
+            width: 420px;
+            border-radius: 10px;
+            padding-top: 15px;
+        }
+        
+        .try,
+        .claim {
+            font-size: 0.8rem;
+            width: 420px;
+            text-align: center;
+            height: 40px;
+            border-radius: 10px;
+        }
+        
+        .claim {
+            margin-top: 10px;
+            background-color: hsl(154, 59%, 51%);
+            color: hsl(255, 17%, 95%);
+            text-transform: uppercase;
+            border-style: outset;
+            border-color: hsl(154, 59%, 51%);
+        }
+        
+        .click {
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        
+        input {
+            width: 320px;
+            height: 30px;
+            margin: 10px 50px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 3px;
+            padding: 5px;
+            border-style: groove;
+            border-color: white;
+        }
+        
+        input:invalid {
+            background-color: grey;
+        }
+        
+        form:invalid {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="info box">
+            <h1>learn to code by watching others</h1>
+            <p class="shorttxt">
+                see how experienced developers solve problems in realtime. watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div class="details box">
+            <p class="try"><strong>Try it free 7days</strong> then $20/mo, thereafter</p>
+            <form onsubmit="return false;" action="#">
+
+
+                <input type="text" name="firstName" size="15" maxlength="30" placeholder="First Name" required/>
+                </p>
+                <p>
+
+                    <input type="text" name="firstName" size="15" maxlength="30" placeholder="Last Name" required/>
+                </p>
+
+                <p>
+                    <input type="email" name="Email" size="15" maxlength="50" placeholder="Email Address" required/>
+
+                </p>
+                <p>
+                    <input type="password" name="password" size="15" maxlength="50" placeholder="password" required/>
+
+                </p>
+
+            </form>
+            <button class="claim">claim your free trial</button>
+            <p class="click">By clicking the button you are agreeing to our <span><a href="">terms and services</a></span></p>
+        </div>
+
+    </main>
+</body>
+
+</html>
